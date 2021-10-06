@@ -1,0 +1,125 @@
+SQL> @example
+
+Table created.
+
+)
+*
+ERROR at line 3:
+ORA-00904: : invalid identifier 
+
+
+foreign key (oid) references OLYMPICS(oid)
+                             *
+ERROR at line 5:
+ORA-00942: table or view does not exist 
+
+
+insert into ATHLETES (aid, name) values (1, "amy")
+                                            *
+ERROR at line 1:
+ORA-00984: column not allowed here 
+
+
+insert into ATHLETES (aid, name) values (2, "charles")
+                                            *
+ERROR at line 1:
+ORA-00984: column not allowed here 
+
+
+insert into ATHLETES (aid, name) values (3, "jerry")
+                                            *
+ERROR at line 1:
+ORA-00984: column not allowed here 
+
+
+insert into ATHLETES (aid, name) values (4, "henry")
+                                            *
+ERROR at line 1:
+ORA-00984: column not allowed here 
+
+
+insert into ATHLETES (aid, name) values (5, "ben")
+                                            *
+ERROR at line 1:
+ORA-00984: column not allowed here 
+
+
+insert into OLYMPICS values (1)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+insert into OLYMPICS values (2)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+insert into OLYMPICS values (3)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+insert into COMPETES (oid, aid) values (1,1)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+insert into COMPETES (oid, aid) values (1,2)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+insert into COMPETES (oid, aid) values (1,3)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+insert into COMPETES (oid, aid) values (1,4)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+insert into COMPETES (oid, aid) values (1,5)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+insert into COMPETES (oid, aid) values (2,1)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+insert into COMPETES (oid, aid) values (2,3)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+insert into COMPETES (oid, aid) values (2,4)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+insert into COMPETES (oid, aid) values (2,5)
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+select * from competes
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> spool off
